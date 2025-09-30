@@ -2,17 +2,19 @@ import { redirect, type LoaderFunctionArgs } from "react-router";
 
 export function meta({ }) {
   return [
-    { title: "Tabet.tech" },
+    { title: "Trenmore Convenience Store" },
     { name: "description", content: "Digital Experiences" },
   ];
 }
 
 export function loader({ }: LoaderFunctionArgs) {
-  return redirect('https://charbeltabet.com')
+  return {}
 }
 
 export default function Home({ }) {
   return (
-    <>Redirecting...</>
+    <div>
+      Trenmore Home
+    </div>
   )
 }
